@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EComApp.Models
 {
-    [Table("Articles")]
+    [Table("Article")]
     public class Article
     {
         public int Id { get; set; }
