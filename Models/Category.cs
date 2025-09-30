@@ -11,7 +11,6 @@ namespace EComApp.Models
         [MaxLength(40)] 
         public string? CategoryName { get; set; }
 
-        public string ArticleName { get; set; }
         public List<Article> Articles { get; set; }
     }
 }

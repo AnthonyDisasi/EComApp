@@ -11,6 +11,9 @@ namespace EComApp.Models
         [MaxLength(40)]
         public string? ArticleName { get; set; }
         [Required]
+        public string? Description { get; set; }
+        
+        [Required]
         public double Price { get; set; }
         public string? Image { get; set; }
         [Required]
@@ -18,5 +21,7 @@ namespace EComApp.Models
         public Category Category { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
         public List<CartDetail> CartDetails { get; set; }
+        [NotMapped]
+        public string CategoryName { get; set; }
     }
 }
